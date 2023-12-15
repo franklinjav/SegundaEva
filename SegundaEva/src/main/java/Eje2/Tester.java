@@ -6,7 +6,7 @@ public class Tester {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         String opcion = "0";
-        while (opcion!="5") {
+        while (!opcion.equals("5")) {
             System.out.println("Introduzca: \n 1 Para devolver las iniciales de su nombre y sus apellidos\n 2 Para concatenar dos frases o palabras y pasarlas a mayúsculas\n 3 Para contar las palabras\n 4 Para saber cuantas veces aparece una palabra en un texto\n 5 Para salir");
             opcion = teclado.nextLine();
             switch (opcion) {
@@ -28,6 +28,13 @@ public class Tester {
                     System.out.println(OperacionesString.contador(texto));
                     break;
                 case "4":
+                    System.out.println("Introduzca un texto");
+                    String texto1 = teclado.nextLine();
+                    System.out.println("Introduzca la palabra que desea contar");
+                    String palabra = teclado.nextLine();
+                    System.out.print("La palabra aparece ");
+                    System.out.print(OperacionesString.obtener(texto1,palabra));
+                    System.out.println(" veces");
                     break;
                 case "5":
                     System.out.println("Saliendo...");

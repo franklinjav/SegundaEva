@@ -19,6 +19,30 @@ public class OperacionesString {
         System.out.println(frase1.concat(frase2).toUpperCase());
     }
     public static int contador (String x) {
-
+        char[] lista = x.toCharArray();
+        boolean verif = false;
+        int cont = 0;
+        for (int i = 0; i < lista.length; i++) {
+            if (lista[i] == ' ') {
+                cont++;
+                if (verif){
+                    cont--;
+                }
+                verif = true;
+            } else {
+                verif=false;
+            }
+        }
+        return cont+1;
+    }
+    public static int obtener (String x, String y) {
+        String [] lista = x.split(" ");
+        int cont = 0;
+        for (int i = 0; i < lista.length; i++) {
+            if (lista[i].equalsIgnoreCase(y)) {
+                cont++;
+            }
+        }
+        return cont;
     }
 }
