@@ -5,7 +5,6 @@ public class Main {
         int edad = 2;
         Gallina gallina2 = new Gallina(name,edad,peso);
         gallina2.mostrarInfo();
-        System.out.println("Prueba");
 
     }
 }
