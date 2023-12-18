@@ -6,5 +6,6 @@ public class Main {
         Gallina gallina2 = new Gallina(name,edad,peso);
         gallina2.mostrarInfo();
         System.out.println("nada");
+        System.out.println("nada 2.0");
     }
 }
