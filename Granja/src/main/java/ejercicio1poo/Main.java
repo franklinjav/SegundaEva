@@ -18,5 +18,15 @@ public class Main {
         System.out.println("La distancia desde el punto1 al círculo es: " + circulo.calcularDistanciaDesde(punto1));
         System.out.println("Área del círculo: " + circulo.calcularArea());
         System.out.println("Perímetro del círculo: " + circulo.calcularPerimetro());
+        //probar la clase triangulo
+        Triangulo triangulo = new Triangulo();
+        if (triangulo.calcularTriangulo()) {
+            System.out.println(triangulo.toString());
+            System.out.println("la distancia mas cercana desde el punto1 al vertice mas cercano es: " + triangulo.calcularDistanciaDesde(punto1));
+            System.out.println("El area del triangulo es: " + triangulo.calcularArea());
+            System.out.println("El perimetro del triangulo es: " + triangulo.calcularPerimetro());
+        } else {
+            System.out.println("No se puede formar un triangulo con estos puntos");
+        }
     }
 }

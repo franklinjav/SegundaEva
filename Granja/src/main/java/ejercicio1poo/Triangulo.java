@@ -63,7 +63,7 @@ public class Triangulo {
     }
     public boolean calcularTriangulo() {
         boolean verdad = true;
-        if (vert1.calcularDistanciaDesde(vert2) < (vert1.calcularDistanciaDesde(vert3)+vert2.calcularDistanciaDesde(vert3))) {
+        if (vert1.calcularDistanciaDesde(vert2) > (vert1.calcularDistanciaDesde(vert3)+vert2.calcularDistanciaDesde(vert3))) {
             verdad = false;
         }
         return verdad;
