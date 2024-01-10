@@ -9,8 +9,5 @@
         <module name="Granja" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Granja" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package ejercicio1poo;
+package SegundaEva.src.main.java.ejercicio1poo;
 
 import java.io.IOException;
 
