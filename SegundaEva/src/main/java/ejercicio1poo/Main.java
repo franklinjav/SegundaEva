@@ -33,8 +33,8 @@ public class Main {
         double x3 = teclado.nextDouble();
         System.out.println("Introduzca la posición y del tercer vértice");
         double y3 = teclado.nextDouble();
-        Triangulo triangulo = new Triangulo(x1,y1,x2,y2,x3,y3);
-        if () {
+        Triangulo triangulo = new Triangulo();
+        if (triangulo.calcularTriangulo()) {
             System.out.println(triangulo);
             System.out.println("la distancia mas cercana desde el punto1 al vertice mas cercano es: " + triangulo.calcularDistanciaDesde(punto1));
             System.out.println("El area del triangulo es: " + triangulo.calcularArea());
