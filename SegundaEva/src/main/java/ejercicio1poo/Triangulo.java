@@ -61,7 +61,7 @@ public class Triangulo {
         double lado3 = vert3.calcularDistanciaDesde(vert1);
         return lado1+lado2+lado3;
     }
-    public boolean calcularTriangulo() {
+    public static boolean calcularTriangulo(Punto vert1,Punto vert2,Punto vert3) {
         boolean verdad = true;
         if (vert1.calcularDistanciaDesde(vert2) > (vert1.calcularDistanciaDesde(vert3)+vert2.calcularDistanciaDesde(vert3)) && vert1.calcularDistanciaDesde(vert3) > (vert1.calcularDistanciaDesde(vert2)+vert2.calcularDistanciaDesde(vert3)) && vert2.calcularDistanciaDesde(vert3) > (vert1.calcularDistanciaDesde(vert3)+vert2.calcularDistanciaDesde(vert1))) {
             verdad = false;
