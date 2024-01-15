@@ -1,34 +1,40 @@
-public class Gallina {
-    private String nombre;
-    private int edad;
-    private float peso;
+import java.util.Arrays;
 
+public class Gallina extends Animal{
+    //Atributos
 
-    private static final String[] nombres ={"Paco","Max","Quien","Goku","MartiMcfly"};
-    public static String getNombreAleatorio() {
-        return nombres[(int) (Math.random()*5)];
-    }
+    private int [] huevossemana;
+
+    //Constructores
 
     public Gallina(String nombre, int edad, float peso) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.peso = peso;
-
+        super(nombre,edad,peso);
+        huevossemana = new int[7];
+        for (int i = 0; i < huevossemana.length; i++) {
+            huevossemana[i] = (int) (Math.random()*3);
+        }
     }
     public Gallina() {
-        nombre = getNombreAleatorio();
+        super();
+        huevossemana = new int[7];
+        for (int i = 0; i < huevossemana.length; i++) {
+            huevossemana[i] = (int) (Math.random()*3);
+        }
     }
 
-    public String getNombre() {
-        return nombre;
+    //Gets y Sets
+
+
+    public int[] getHuevossemana() {
+        return huevossemana;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setHuevossemana(int[] huevossemana) {
+        this.huevossemana = huevossemana;
     }
 
-    public void mostrarInfo() {
-        System.out.println("Me llamo " + nombre + " peso " + peso + "KG" + " y tengo " + edad + " años");
+    public String toString() {
+        return super.toString() + String.format("He puesto: %s", Arrays.toString(huevossemana));
     }
 
 
