@@ -1,4 +1,4 @@
-package SegundaEva.src.main.java.ejercicio1poo;
+package src.main.java.ejercicio1poo;
 
 public class Triangulo {
 

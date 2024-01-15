@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Scanner teclado = new Scanner(System.in);
         String opcion = "10";
-        while (!opcion.equals("5")) {
-            System.out.println("Introduzca:\n 1 Para acceder a la gallina\n 2 Para acceder a las ovejas\n 3 Para acceder a los cerdos\n 4 Para acceder a las vacas\n 5 Para salir");
+        while (!opcion.equals("6")) {
+            System.out.println("Introduzca:\n 1 Para acceder a la gallina\n 2 Para acceder a las ovejas\n 3 Para acceder a los cerdos\n 4 Para acceder a las vacas\n 5 Para generar una lista de vacas y gallinas\n 6 Para salir");
             opcion = teclado.nextLine();
             switch (opcion) {
                 case "1":
@@ -148,6 +148,10 @@ public class Main {
                     }
                     break;
                 case "5":
+                    Granja granja = new Granja();
+                    System.out.println(granja);
+                    break;
+                case "6":
                     System.out.println("Saliendo...");
                     System.out.println("---------------------------------------------");
                     break;
