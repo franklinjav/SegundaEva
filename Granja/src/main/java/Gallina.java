@@ -33,8 +33,20 @@ public class Gallina extends Animal{
         this.huevossemana = huevossemana;
     }
 
+    //Métodos
+
+    public float media() {
+        float sum = 0;
+        for (int i = 0; i < huevossemana.length; i++) {
+            sum = sum + huevossemana[i];
+        }
+        return sum/ huevossemana.length;
+    }
+
+    //toString
+
     public String toString() {
-        return super.toString() + String.format("He puesto: %s", Arrays.toString(huevossemana));
+        return super.toString() + String.format("Huevos puestos en una semana: %s\nLa media de Huevos es de: %.2f\n", Arrays.toString(huevossemana),media());
     }
 
 

@@ -30,6 +30,14 @@ public class Granja {
         }
     }
 
+    //Métodos
+
+    public void calcularMedias() {
+        for (int i = 0; i < animales.length; i++) {
+            animales[i].media();
+        }
+    }
+
     //toStrings
 
 

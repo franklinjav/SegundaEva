@@ -44,9 +44,15 @@ public abstract class Animal {
         peso = (float) (Math.random()*100+1);
     }
 
+    //Métodos
+
+    public float media() {
+        return 0;
+    }
+
     //toString
 
     public String toString() {
-        return String.format("Nombre: %s\nTengo %d años\nMi peso es: %.2f Kg\n", nombre, edad, peso);
+        return this.getClass().getSimpleName() + String.format("\nNombre: %s\nTengo %d años\nMi peso es: %.2f Kg\n", nombre, edad, peso);
     }
 }

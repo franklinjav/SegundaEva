@@ -134,7 +134,7 @@ public class Main {
                                 int edad = teclado.nextInt();
                                 System.out.println("Introduzca la cantidad de leche que ha producido la vaca");
                                 float leche = teclado.nextFloat();
-                                Vaca vaca = new Vaca(nombre, edad, peso, leche);
+                                Vaca vaca = new Vaca(nombre, edad, peso);
                                 System.out.println(vaca);
                                 System.out.println("---------------------------------------------");
                                 break;
