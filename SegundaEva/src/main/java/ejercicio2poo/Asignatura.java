@@ -1,4 +1,4 @@
-package SegundaEva.src.main.java.ejercicio2poo;
+package src.main.java.ejercicio2poo;
 
 public class Asignatura {
 
