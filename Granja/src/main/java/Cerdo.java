@@ -10,6 +10,11 @@ public class Cerdo extends Animal {
         comida = (float) (Math.random() * 5);
     }
 
+    @Override
+    public float media() {
+        return 0;
+    }
+
     public Cerdo(String nombre, int edad, float peso, float comida) {
         super(nombre, edad, peso);
         this.comida = comida;

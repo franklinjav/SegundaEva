@@ -46,9 +46,7 @@ public abstract class Animal {
 
     //Métodos
 
-    public float media() {
-        return 0;
-    }
+    public abstract float media();
 
     //toString
 

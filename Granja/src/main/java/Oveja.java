@@ -18,6 +18,11 @@ public class Oveja extends Animal{
         lana = (float) (Math.random()*6);
     }
 
+    @Override
+    public float media() {
+        return 0;
+    }
+
     public Oveja(String nombre,int edad, float peso, float lana) {
         super(nombre,edad,peso);
         this.lana = lana;
