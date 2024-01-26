@@ -41,7 +41,7 @@ public class Main {
                     int cont1 = teclado.nextInt();
                     System.out.println("Introduzca el número en agenda contacto con el que desea comparar");
                     int cont2 = teclado.nextInt();
-                    if (GestorContactos.compararContactos(agenda[cont1],agenda[cont2])) {
+                    if (GestorContactos.compararContactos(agenda[cont1-1],agenda[cont2-1])) {
                         System.out.println("Los contactos tienen el mismo número (son iguales)");
                     } else {
                         System.out.println("Los contactos son diferentes (tienen diferentes números)");
