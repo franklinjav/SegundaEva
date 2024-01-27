@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        /*
         Scanner teclado = new Scanner(System.in);
         //Prueba clase médicoCentrosalud
         MedicoCentroSalud medicocentro1 = new MedicoCentroSalud(new CentroSalud());
@@ -34,5 +35,10 @@ public class Main {
         System.out.println("Salario: " + medicocentro1.calcularSalario());
         System.out.println(medicocentro2);
         System.out.println("Salario: " + medicocentro2.calcularSalario());
+        */
+        //Prueba rápida MedicoAsistenciaDomiciliaria
+        MedicoAsistenciaDomiciliaria medicoasis1 = new MedicoAsistenciaDomiciliaria();
+        System.out.println(medicoasis1);
+        System.out.println("Salario: " + medicoasis1.calcularSalario());
     }
 }
