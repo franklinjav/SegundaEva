@@ -12,6 +12,7 @@ public class MedicoAsistenciaDomiciliaria extends Medico{
 
 
     public MedicoAsistenciaDomiciliaria() {
+        super();
         km_visita = new int[31];
         for (int i = 0; i < km_visita.length; i++) {
             km_visita[i] = (int) (Math.random()*50+1);
@@ -19,9 +20,12 @@ public class MedicoAsistenciaDomiciliaria extends Medico{
         tarifakm = 2;
     }
 
-    public MedicoAsistenciaDomiciliaria(String nombre, int edad, String sexo, double horas, double salario_hora, int[] km_visita, double tarifakm) {
+    public MedicoAsistenciaDomiciliaria(String nombre, int edad, String sexo, double horas, double salario_hora, double tarifakm) {
         super(nombre, edad, sexo, horas, salario_hora);
-        this.km_visita = km_visita;
+        km_visita = new int[31];
+        for (int i = 0; i < km_visita.length; i++) {
+            km_visita[i] = (int) (Math.random()*50+1);
+        }
         this.tarifakm = tarifakm;
     }
 
@@ -40,6 +44,6 @@ public class MedicoAsistenciaDomiciliaria extends Medico{
 
     @Override
     public String toString() {
-        return super.toString() + String.format("Los kilometros recorridos cada día del mes son:\n" + Arrays.toString(km_visita));
+        return super.toString() + String.format("Los kilometros recorridos cada día del mes son:\n" + Arrays.toString(km_visita) + "\n");
     }
 }
