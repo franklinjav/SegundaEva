@@ -51,6 +51,6 @@ public class Cocinero extends Empleado{
 
     @Override
     public String toString() {
-        return super.toString() + String.format("\nAños trabajados: " + a_trabajados + "\nEspecialidad: " + especialidad);
+        return super.toString() + String.format("\nAños trabajados: " + a_trabajados + "\nEspecialidad: " + especialidad + "\nEl salario total es de: " + calcularSalario() + "\n");
     }
 }

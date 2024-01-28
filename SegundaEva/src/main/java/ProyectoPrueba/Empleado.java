@@ -97,7 +97,7 @@ public abstract class Empleado {
 
     @Override
     public String toString() {
-        return String.format("\nNombre: " + nombre + "\nApellidos: " + apellidos + "\nTeléfono: " + tlf + "\nDirección: " + direccion
+        return this.getClass().getSimpleName() + String.format("\nNombre: " + nombre + "\nApellidos: " + apellidos + "\nTeléfono: " + tlf + "\nDirección: " + direccion
         + "\nEdad: " + edad + "\nDNI: " + dni + "\nSalario: " + salario);
     }
 

@@ -44,12 +44,13 @@ public class Mesero extends Empleado{
 
     @Override
     public String toString() {
-        return super.toString() + String.format("\nPropinas acumuladas en el mes: " + propinas + "\nIdiomas: " + idiomas);
+        return super.toString() + String.format("\nPropinas acumuladas en el mes: " + propinas + "\nIdiomas: " + idiomas + "\nEl salario total es de: " + calcularSalario() + "\n");
     }
 
     //Métodos
     @Override
     public double calcularSalario() {
-        return 0;
+
+        return getSalario() + propinas;
     }
 }
