@@ -3,9 +3,9 @@ package src.main.java.EjeCuentas;
 public class CuentaCorriente {
     //Atributos
 
-    private Titular titular;
-    private String numeroc;
-    private double saldo;
+    protected Titular titular;
+    protected String numeroc;
+    protected double saldo;
 
     //Constructores
 
@@ -59,5 +59,8 @@ public class CuentaCorriente {
     }
     public void reintegro(double restar) {
         saldo = saldo - restar;
+    }
+    public static boolean compararCuentas(CuentaCorriente cuenta1, CuentaCorriente cuenta2) {
+        return cuenta1.getNumeroc().equalsIgnoreCase(cuenta2.getNumeroc());
     }
 }
