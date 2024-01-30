@@ -3,13 +3,13 @@ package src.main.java.ProyectoPrueba;
 public abstract class Empleado {
     //Atributos
 
-    private String nombre;
-    private String apellidos;
-    private String tlf;
-    private String direccion;
-    private String dni;
-    private int edad;
-    private double salario;
+    protected String nombre;
+    protected String apellidos;
+    protected String tlf;
+    protected String direccion;
+    protected String dni;
+    protected int edad;
+    protected double salario;
 
     //Constructores
 

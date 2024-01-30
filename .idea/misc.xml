@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Granja/pom.xml" />
+        <option value="$PROJECT_DIR$/Ajedrez/pom.xml" />
       </list>
     </option>
   </component>
