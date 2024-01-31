@@ -10,8 +10,6 @@ public class Movimiento {
 
 
     public Movimiento() {
-        posIni = new Posicion();
-        posFin = new Posicion();
     }
 
     public Movimiento(Posicion posIni, Posicion posFin) {

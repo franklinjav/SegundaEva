@@ -28,5 +28,18 @@ public class Tablero {
             System.out.println();
         }
     }
-
+    public boolean hayPieza(Posicion pos){
+        boolean verdad = true;
+        if (tablero[pos.getColumna()][pos.getFila()] == null) {
+            verdad = false;
+        }
+        return verdad;
+    }
+    public boolean hayPieza(int fila, int columna) {
+        boolean verdad = true;
+        if (tablero[columna][fila] == null) {
+            verdad = false;
+        }
+        return verdad;
+    }
 }
