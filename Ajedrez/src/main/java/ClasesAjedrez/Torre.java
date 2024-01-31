@@ -1,16 +1,14 @@
 package ClasesAjedrez;
 
-public class Rey extends Pieza{
-    //TERMINAR
+public class Torre extends Pieza{
     //Constructores
 
-    public Rey(boolean color) {
+    public Torre(boolean color) {
         super(color);
     }
     //Métodos
-
     @Override
     public boolean validoMovimiento(Movimiento mov) {
-        return false;
+        return mov.esVertical() || mov.esHorizontal();
     }
 }

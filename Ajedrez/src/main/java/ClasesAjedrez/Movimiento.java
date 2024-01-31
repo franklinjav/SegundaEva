@@ -51,21 +51,21 @@ public class Movimiento {
 
     //Métodos
 
-    public boolean esVertical(Posicion posIni,Posicion posFin) {
+    public boolean esVertical() {
         boolean vertical = false;
         if (posIni.getColumna() == posFin.getColumna() && posIni.getFila() != posFin.getFila()) {
             vertical = true;
         }
         return vertical;
     }
-    public boolean esHorizontal(Posicion posIni,Posicion posFin) {
+    public boolean esHorizontal() {
         boolean horizontal = false;
         if (posIni.getFila() == posFin.getFila() && posIni.getColumna() != posFin.getColumna()) {
             horizontal = true;
         }
         return horizontal;
     }
-    public boolean esDiagonal(Posicion posIni,Posicion posFin) {
+    public boolean esDiagonal() {
         boolean diagonal = false;
         if (Math.abs(posIni.getColumna() - posFin.getColumna()) == Math.abs(posIni.getFila() - posFin.getFila())) {
             diagonal = true;
@@ -74,14 +74,14 @@ public class Movimiento {
     }
     public int saltoHorizontal(Posicion posIni,Posicion posFin) {
         int cant = 0;
-        if (esHorizontal(posIni,posFin)) {
+        if (esHorizontal()) {
             cant = Math.abs(posIni.getColumna() - posFin.getColumna());
         }
         return cant;
     }
     public int saltoVertical(Posicion posIni,Posicion posFin) {
         int cant = 0;
-        if (esVertical(posIni,posFin)) {
+        if (esVertical()) {
             cant = Math.abs(posIni.getFila() - posFin.getFila());
         }
         return cant;
