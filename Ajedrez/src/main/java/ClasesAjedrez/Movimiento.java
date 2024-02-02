@@ -73,14 +73,14 @@ public class Movimiento {
     public int saltoHorizontal(Posicion posIni,Posicion posFin) {
         int cant = 0;
         if (esHorizontal()) {
-            cant = Math.abs(posIni.getColumna() - posFin.getColumna());
+            cant = posIni.getColumna() - posFin.getColumna();
         }
         return cant;
     }
     public int saltoVertical(Posicion posIni,Posicion posFin) {
         int cant = 0;
         if (esVertical()) {
-            cant = Math.abs(posIni.getFila() - posFin.getFila());
+            cant = posIni.getFila() - posFin.getFila();
         }
         return cant;
     }
